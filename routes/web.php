@@ -14,3 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('checkout', 'HomeController@checkout');
+
+Route::get('done', function(){
+	return "Done";
+});
+
+Route::get('cancel', function(){
+	return "Cancel";
+});
